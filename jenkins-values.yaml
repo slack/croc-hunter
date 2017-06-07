@@ -4,16 +4,17 @@
 
 Master:
   Memory: "512Mi"
-  HostName: jenkins.acs.az.estrado.io
+  HostName: jenkins.eu.slack.io
   ServiceType: ClusterIP
   InstallPlugins:
-      - kubernetes:0.11 
+      - kubernetes:0.11
       - workflow-aggregator:2.5
       - credentials-binding:1.11
       - git:3.3.0
       - pipeline-github-lib:1.0
       - ghprb:1.36.2
       - blueocean:1.0.1
+      - workflow-job:2.11
 
   ScriptApproval:
     - "method groovy.json.JsonSlurperClassic parseText java.lang.String"
@@ -27,9 +28,9 @@ Master:
       kubernetes.io/tls-acme: "true"
 
     TLS:
-      - secretName: jenkins.acs.az.estrado.io
+      - secretName: jenkins.eu.slack.io
         hosts:
-          - jenkins.acs.az.estrado.io
+          - jenkins.eu.slack.io
 
 Agent:
   Enabled: false
