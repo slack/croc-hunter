@@ -8,7 +8,7 @@ servicePort: 80
 containerPort: 8080
 component: "croc-hunter"
 replicas: 3
-image: "quay.io/lachie83/croc-hunter"
+image: "acreuwest.azurecr.io/slack/croc-hunter"
 imageTag: "latest"
 imagePullPolicy: "Always"
 cpu: "10m"
@@ -16,7 +16,7 @@ memory: "128Mi"
 # Ingress settings
 ingress:
   enabled: true
-  hostname: croc-hunter.acs.az.estrado.io
+  hostname: croc-hunter.eu.slack.io
   annotations:
      kubernetes.io/ingress.class: nginx
      kubernetes.io/tls-acme: "true"
