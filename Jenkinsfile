@@ -125,7 +125,7 @@ volumes:[
             cpu           : config.app.cpu,
             memory        : config.app.memory
           )
-          
+
           //  Run helm tests
           if (config.app.test) {
             pipeline.helmTest(
