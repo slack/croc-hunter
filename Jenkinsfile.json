@@ -7,7 +7,7 @@
     "test": true
   },
   "container_repo": {
-    "host": "acreuwest.azurecr.io",
+    "host": "slack.azurecr.io",
     "master_acct": "slack",
     "alt_acct": "slack",
     "jenkins_creds_id": "registry_creds",
