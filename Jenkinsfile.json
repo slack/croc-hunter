@@ -1,6 +1,7 @@
 {
   "app": {
     "name": "croc-hunter",
+    "namespace": "croc-hunter",
     "replicas": "3",
     "cpu": "10m",
     "memory": "128Mi",

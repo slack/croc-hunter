@@ -78,6 +78,7 @@ volumes:[
         pipeline.helmDeploy(
           dry_run       : true,
           name          : config.app.name,
+          namespace     : config.app.namespace,
           version_tag   : image_tags_list.get(0),
           chart_dir     : chart_dir,
           replicas      : config.app.replicas,
@@ -119,6 +120,7 @@ volumes:[
           pipeline.helmDeploy(
             dry_run       : false,
             name          : config.app.name,
+            namespace     : config.app.namespace,
             version_tag   : image_tags_list.get(0),
             chart_dir     : chart_dir,
             replicas      : config.app.replicas,
@@ -129,7 +131,8 @@ volumes:[
           //  Run helm tests
           if (config.app.test) {
             pipeline.helmTest(
-              name          : config.app.name
+              name          : config.app.name,
+              namespace     : config.app.namespace
             )
           }
         }
