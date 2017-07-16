@@ -1,16 +1,16 @@
 {
   "app": {
     "name": "croc-hunter",
-    "namespace": "croc-hunter",
     "replicas": "3",
     "cpu": "10m",
     "memory": "128Mi",
-    "test": true
+    "test": true,
+    "hostname": "croc-hunter.acslas1.slack.io"
   },
   "container_repo": {
-    "host": "slack.azurecr.io",
-    "master_acct": "slack",
-    "alt_acct": "slack",
+    "host": "acslas1.azurecr.io",
+    "master_acct": "croc-hunter",
+    "alt_acct": "croc-hunter",
     "jenkins_creds_id": "registry_creds",
     "repo": "croc-hunter",
     "dockeremail": ".",
