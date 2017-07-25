@@ -5,10 +5,10 @@
     "cpu": "10m",
     "memory": "128Mi",
     "test": true,
-    "hostname": "croc-hunter.acslas1.slack.io"
+    "hostname": "croc-hunter.ing.slack.io"
   },
   "container_repo": {
-    "host": "acslas1.azurecr.io",
+    "host": "slack.azurecr.io",
     "master_acct": "croc-hunter",
     "alt_acct": "croc-hunter",
     "jenkins_creds_id": "registry_creds",
