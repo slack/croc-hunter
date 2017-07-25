@@ -1,6 +1,6 @@
 default: docker_build
 
-DOCKER_IMAGE ?= acslas1.azurecr.io/croc-hunter/croc-hunter
+DOCKER_IMAGE ?= slack.azurecr.io/croc-hunter/croc-hunter
 BUILD_NUMBER ?= `git rev-parse --short HEAD`
 VCS_REF ?= `git rev-parse --short HEAD`
 
